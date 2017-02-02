@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jsdom": "^9.9.1"
+  },
+  "scripts": {
+    "fetch": "node src/fetch-list"
+  }
+}

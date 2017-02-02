@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.ssense.com/en-ca/women/product/loewe/pink-mini-elephant-bag/1898113",
+    "selector": "#addBagForm > div > div.span16.hidden-smartphone-landscape > h3 > span",
+    "name": "Pink Mini Elephant Bag"
+  },
+  {
+    "url": "http://duewest.ca/collections/kenzo-womens/products/kenzo-tech-down-bomber-multiple-colours",
+    "selector": "#product-8080648264 > div > div.eight.columns.omega > p > span.sale > span",
+    "name": "Woman Kenzo Bomber"
+  },
+  {
+    "url": "http://duewest.ca/collections/kenzo-mens/products/kenzo-tech-bomber-multiple-colours",
+    "selector": "#product-8080650056 > div > div.eight.columns.omega > p > span.sale > span",
+    "name": "Man Kenzo Bomber"
+  },
+  {
+    "url": "http://duewest.ca/collections/mackage/products/mackage-edward-f-6-down-jacket",
+    "selector": "#product-6293273988 > div > div.eight.columns.omega > p > span.sale > span",
+    "name": "Man Mackage"
+  }
+]
