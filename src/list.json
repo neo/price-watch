@@ -16,7 +16,7 @@
   },
   {
     "url": "http://duewest.ca/collections/mackage/products/mackage-edward-f-6-down-jacket",
-    "selector": "#product-6293273988 > div > div.eight.columns.omega > p > span.sale > span",
+    "selector": "#product-6293273988 > div > div.eight.columns.omega > p > span:nth-child(5) > span",
     "name": "Man Mackage"
   }
 ]

@@ -7,7 +7,8 @@ module.exports = function(item) {
       const priceTag = window.document.querySelector(item.selector);
       resolve({
         name: item.name || window.document.title,
-        price: priceTag.innerHTML.trim()
+        price: priceTag ? priceTag.innerHTML.trim() : 'Invalid selector',
+        url: item.url
       });
     });
   });
