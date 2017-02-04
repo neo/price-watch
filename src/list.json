@@ -5,16 +5,6 @@
     "name": "Pink Mini Elephant Bag"
   },
   {
-    "url": "http://duewest.ca/collections/kenzo-womens/products/kenzo-tech-down-bomber-multiple-colours",
-    "selector": "#product-8080648264 > div > div.eight.columns.omega > p > span.sale > span",
-    "name": "Woman Kenzo Bomber"
-  },
-  {
-    "url": "http://duewest.ca/collections/kenzo-mens/products/kenzo-tech-bomber-multiple-colours",
-    "selector": "#product-8080650056 > div > div.eight.columns.omega > p > span.sale > span",
-    "name": "Man Kenzo Bomber"
-  },
-  {
     "url": "http://duewest.ca/collections/mackage/products/mackage-edward-f-6-down-jacket",
     "selector": "#product-6293273988 > div > div.eight.columns.omega > p > span:nth-child(5) > span",
     "name": "Man Mackage"
