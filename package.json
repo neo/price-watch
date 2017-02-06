@@ -4,6 +4,7 @@
     "jsdom": "^9.9.1"
   },
   "scripts": {
+    "test": "npm run fetch",
     "start": "node src/server",
     "fetch": "node src/fetch-list"
   }
