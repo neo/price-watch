@@ -5,6 +5,11 @@
     "name": "Pink Mini Elephant Bag"
   },
   {
+    "url": "https://www.ssense.com/en-ca/women/product/kenzo/pink-tiger-pullover/1627833",
+    "selector": "#addBagForm > div > div.span16.hidden-smartphone-landscape > h3 > span",
+    "name": "Kenzo Pink Tiger Pullover"
+  },
+  {
     "url": "http://duewest.ca/collections/mackage/products/mackage-edward-f-6-down-jacket",
     "selector": "#product-6293273988 > div > div.eight.columns.omega > p > span:nth-child(5) > span",
     "name": "Man Mackage"
