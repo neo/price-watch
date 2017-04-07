@@ -1,5 +1,10 @@
 [
   {
+    "url": "https://www.fendi.com/ca/black-leather-mini-bag/p-8M0381OZCF0KUR",
+    "selector": "#wrapper > div > div.product > div:nth-child(1) > div.main-product > div.product-info > div.product-description > div > span",
+    "name": "Fendi Small Black Kan I w/ Gold Chain"
+  },
+  {
     "url": "https://www.ssense.com/en-ca/women/product/loewe/pink-mini-elephant-bag/1898113",
     "selector": "#addBagForm > div > div.span16.hidden-smartphone-landscape > h3 > span",
     "name": "Pink Mini Elephant Bag"
