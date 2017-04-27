@@ -2,16 +2,30 @@ const jsdom = require('jsdom');
 const request = require('request');
 const fetch = require('./fetch');
 const list = require('./list.json');
-const {
-  PAGE_ACCESS_TOKEN,
-  id
-} = require('./env.json');
-
-const interval = parseFloat(process.argv[2]) || 1;
+const env = require('./env.json');
 
 let intervalID = null;
 
-intervalID = setInterval(watch, interval * 1000);
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN || env.PAGE_ACCESS_TOKEN;
+const id = process.env.id || env.id;
+
+if (module.parent) {
+  module.exports = start;
+} else {
+  try {
+    process.argv[2] ? start(parseFloat(process.argv[2])) : start();
+  }
+  catch (e) { console.error(e); }
+}
+
+function start(interval = 1) {
+  if (!PAGE_ACCESS_TOKEN || !id) {
+    throw 'Missing env value(s)'
+  }
+
+  watch();
+  intervalID = setInterval(watch, interval * 1000);
+}
 
 function watch() {
   fetch(list[0])
