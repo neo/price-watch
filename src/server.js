@@ -1,6 +1,10 @@
 const app = require('express')();
-const fetch = require('./fetch');
 const list = require('./list.json');
+const fetch = require('./fetch');
+const watch = require('./watch');
+
+try { watch(60); }
+catch(e) { console.error(e); }
 
 app.get('/json', (req, res) => {
   Promise.all(list.map(fetch))

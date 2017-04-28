@@ -25,6 +25,8 @@ function start(interval = 1) {
 
   watch();
   intervalID = setInterval(watch, interval * 1000);
+
+  sendMessage(interval + 's Watching');
 }
 
 function watch() {
@@ -43,8 +45,12 @@ function watch() {
 
 function inStock(item) {
   if (intervalID) clearInterval(intervalID);
-  const url = 'https://graph.facebook.com/v2.6/me/messages?access_token=' + PAGE_ACCESS_TOKEN;
   const text = `${item.name} is available for ${item.price} at ${item.url}`;
+  sendMessage(text);
+}
+
+function sendMessage(text) {
+  const url = 'https://graph.facebook.com/v2.6/me/messages?access_token=' + PAGE_ACCESS_TOKEN;
   const json = {
     recipient: { id },
     message: { text }
@@ -54,7 +60,7 @@ function inStock(item) {
     json,
     method: 'POST'
   }, (error) => {
-    if (error) console.erroe(error);
+    if (error) console.error(error);
     else console.log('Message Sent');
   });
 }
