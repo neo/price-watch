@@ -2,12 +2,13 @@ const jsdom = require('jsdom');
 const request = require('request');
 const fetch = require('./fetch');
 const list = require('./list.json');
-const env = require('./env.json');
+
+require('dotenv').config()
 
 let intervalID = null;
 
-const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN || env.PAGE_ACCESS_TOKEN;
-const id = process.env.id || env.id;
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
+const id = process.env.FACEBOOK_ID;
 
 if (module.parent) {
   module.exports = start;
